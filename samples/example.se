@@ -1,0 +1,23 @@
+se 1
+
+# Semantic Programming Language sample
+program Example
+object Main
+
+scope demo {
+    node example
+    relations
+
+    true
+    false
+    null
+    unknown
+
+    %12
+    @42
+
+    "Hello Semantic"
+    123
+    3.14159
+    0xFF
+}

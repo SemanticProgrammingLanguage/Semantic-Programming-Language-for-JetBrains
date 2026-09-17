@@ -1,0 +1,25 @@
+JETBRAINS MARKETPLACE — ADDITIONAL INFORMATION
+
+Publisher / Vendor:
+Tarek Wasfy
+
+Website:
+https://www.semantic-programming-language.com/
+
+Source Code:
+https://github.com/SemanticProgrammingLanguage/Semantic-Programming-Language-for-JetBrains
+
+License:
+MIT License
+
+License URL:
+https://github.com/SemanticProgrammingLanguage/Semantic-Programming-Language-for-JetBrains/blob/main/LICENSE
+
+Main Semantic repository:
+https://github.com/SemanticProgrammingLanguage/Semantic-Programming-Language
+
+IMPORTANT:
+The Source Code and License fields shown under Marketplace "Additional Information"
+are Marketplace metadata fields. Enter the URLs above in the JetBrains Marketplace
+plugin administration page as well. plugin.xml embeds the same information in the
+plugin itself, but Marketplace metadata is managed separately.

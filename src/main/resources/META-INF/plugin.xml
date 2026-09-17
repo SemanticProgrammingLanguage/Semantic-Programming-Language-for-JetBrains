@@ -1,0 +1,128 @@
+<idea-plugin url="https://www.semantic-programming-language.com/">
+    <id>com.semanticprogramminglanguage.jetbrains.syntax</id>
+    <name>Semantic Programming Language Syntax Highlighting</name>
+
+    <vendor url="https://www.semantic-programming-language.com/">
+        Tarek Wasfy
+    </vendor>
+
+    <category>Languages</category>
+
+    <description><![CDATA[
+        <h2>Semantic Programming Language for JetBrains</h2>
+
+        <p>
+            High-quality editor support for the
+            <b>Semantic Programming Language</b> in JetBrains IDEs.
+        </p>
+
+        <p>
+            Semantic Programming Language is a universal, matrix-driven programming
+            language and compiler architecture based on canonical
+            <b>SemanticProgram / Universal Abstract Syntax Tree (UAST)</b>
+            representations.
+        </p>
+
+        <p>
+            This plugin focuses on fast, lightweight language support for readable
+            Semantic source files and integrates <code>.se</code> and <code>.sp</code>
+            files directly into IntelliJ Platform editors.
+        </p>
+
+        <h3>Features</h3>
+        <ul>
+            <li>Syntax highlighting for <code>.se</code> and <code>.sp</code></li>
+            <li>Semantic keyword and constant highlighting</li>
+            <li>Strings, numbers and Semantic references</li>
+            <li><code>#</code> line comments</li>
+            <li>Semantic operators and delimiters</li>
+            <li>JetBrains file-type integration</li>
+            <li>Semantic file and plugin icons</li>
+        </ul>
+
+        <h3>Semantic source</h3>
+        <pre>
+se 1
+
+# Semantic Programming Language
+program Demo
+object Main
+
+scope example {
+    node item
+    relations
+
+    true
+    %12
+    @42
+    "Hello Semantic"
+    123
+}
+        </pre>
+
+        <h3>About Semantic</h3>
+        <p>
+            The broader Semantic architecture represents programs independently of
+            their original source language. Source code can be lowered into a
+            canonical SemanticProgram/UAST representation and processed through
+            shared validation, transformation, transpilation and compiler stages.
+        </p>
+
+        <p>
+            <b>Publisher:</b> Tarek Wasfy
+        </p>
+
+        <p>
+            <b>Website:</b>
+            <a href="https://www.semantic-programming-language.com/">
+                https://www.semantic-programming-language.com/
+            </a>
+        </p>
+
+        <p>
+            <b>GitHub:</b>
+            <a href="https://github.com/SemanticProgrammingLanguage/Semantic-Programming-Language-for-JetBrains">
+                https://github.com/SemanticProgrammingLanguage/Semantic-Programming-Language-for-JetBrains
+            </a>
+        </p>
+
+        <p>
+            <b>License:</b> MIT License —
+            <a href="https://github.com/SemanticProgrammingLanguage/Semantic-Programming-Language-for-JetBrains/blob/main/LICENSE">
+                View license
+            </a>
+        </p>
+    ]]></description>
+
+    <change-notes><![CDATA[
+        <h3>Metadata update</h3>
+        <ul>
+            <li>Added official publisher information.</li>
+            <li>Added website, GitHub and license links.</li>
+            <li>Expanded the JetBrains Marketplace overview.</li>
+        </ul>
+    ]]></change-notes>
+
+    <depends>com.intellij.modules.lang</depends>
+
+    <extensions defaultExtensionNs="com.intellij">
+        <fileType
+            name="Semantic"
+            language="Semantic"
+            implementationClass="com.semanticprogramminglanguage.jetbrains.SemanticFileType"
+            fieldName="INSTANCE"
+            extensions="se;sp"/>
+
+        <lang.parserDefinition
+            language="Semantic"
+            implementationClass="com.semanticprogramminglanguage.jetbrains.SemanticParserDefinition"/>
+
+        <lang.syntaxHighlighterFactory
+            language="Semantic"
+            implementationClass="com.semanticprogramminglanguage.jetbrains.SemanticSyntaxHighlighterFactory"/>
+
+        <lang.commenter
+            language="Semantic"
+            implementationClass="com.semanticprogramminglanguage.jetbrains.SemanticCommenter"/>
+    </extensions>
+</idea-plugin>

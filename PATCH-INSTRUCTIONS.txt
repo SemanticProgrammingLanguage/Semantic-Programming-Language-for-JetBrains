@@ -1,0 +1,29 @@
+SEMANTIC JETBRAINS MARKETPLACE METADATA PATCH
+
+1. Replace:
+   src/main/resources/META-INF/plugin.xml
+
+2. Rebuild:
+   .\build-plugin.ps1
+
+3. Upload the newly built ZIP from:
+   build\distributions\
+
+4. In JetBrains Marketplace plugin administration set:
+
+   Publisher / Vendor:
+   Tarek Wasfy
+
+   Website:
+   https://www.semantic-programming-language.com/
+
+   Source Code:
+   https://github.com/SemanticProgrammingLanguage/Semantic-Programming-Language-for-JetBrains
+
+   License:
+   MIT License
+
+   License URL:
+   https://github.com/SemanticProgrammingLanguage/Semantic-Programming-Language-for-JetBrains/blob/main/LICENSE
+
+5. MARKETPLACE-OVERVIEW.md contains the polished long-form overview text.
